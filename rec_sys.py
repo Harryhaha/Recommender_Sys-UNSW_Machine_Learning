@@ -1,10 +1,6 @@
 import math
 import time
 
-'''
-code intro is in readme.txt
-'''
-
 DEBUG = False
 file_setting_list = [  # item_file, training_file, testing_file
     ("ml-100k/u.item", "ml-100k/u.data", ""),
@@ -14,6 +10,7 @@ file_setting_list = [  # item_file, training_file, testing_file
     ("ml-100k/u.item", "ml-100k/u4.base", "ml-100k/u4.test"),
     ("ml-100k/u.item", "ml-100k/u5.base", "ml-100k/u5.test"),
 ]
+
 
 
 class RecSys:
@@ -418,19 +415,14 @@ if __name__ == '__main__':
 
     # my_test2()
 
-
     # test1.get_user_rating("87")
     # test1.get_recommendation_list(user_id="87", is_print=True)
 
     # for key in test1.sim_data:
     #     print("{:s}|{:s}|{:.4f}".format(key[0],key[1],test1.sim_data[key]))
 
-
-
     # print(test1.get_predict_rating(user_id="87",item_id="1"))
     # test1.get_recommendation_list(user_id="87",is_print=True)
-
-
 
     print("END")
     exit(0)
